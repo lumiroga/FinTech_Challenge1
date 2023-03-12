@@ -166,7 +166,7 @@ inexpensive_loans = []
 
 # @TODO: Loop through all the loans and append any that cost $500 or less to the `inexpensive_loans` list
 for loan in loans:
-    if loan["loan_price"] <= 500:
+    if loan.get("loan_price") <= 500:
         inexpensive_loans.append(loan)
 #LR    loan["present_value"] = calculate_present_value(loan["future_value"],loan["remaining_months"],0.2)
 
