@@ -203,5 +203,5 @@ with open(output_path,'w',newline='') as csvfile:
     for loan in inexpensive_loans:
         csvwriter.writerow(loan.values())
 
-print("file completed")
+print("file completed, you can open the csv file now")
 
